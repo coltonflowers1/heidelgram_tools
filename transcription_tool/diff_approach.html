@@ -1,0 +1,45 @@
+
+<link rel="stylesheet", href="diff_approach.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<style type="text/css" media="all">@import "jquery-image-annotate-master/css/annotation.css";</style>
+<script type="text/javascript" src="jquery-image-annotate-master/dist/js/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-image-annotate-master/dist/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery-image-annotate-master/js/jquery.annotate.js"></script>
+<div id="wrapper">
+    <div id="file_finder">
+     <label>Grammar:
+         <select id="grammar">
+           <option>Select a Grammar</option>
+           <option name="A_Treatise_of_the_Figures_of_Grammar_and_Rhetorike" value="A_Treatise_of_the_Figures_of_Grammar_and_Rhetorike" class = "grammarClass">0. A Treatise of the Figures of Grammar and Rhetorike</option>
+           <option name="The_First_Part_of_the_Elementarie" value="The_First_Part_of_the_Elementarie" class = "grammarClass">1. The First Part of the Elementarie</option>
+           <option name="Brief_Grammar_of_English" value="Brief_Grammar_of_English" class = "grammarClass">2. Brief Grammar of English</option>
+           <option name="The_English_Schoole_Maister" value="The_English_Schoole_Maister" class = "grammarClass">4. The English Schoole Maister</option>
+         </select>
+       </label>
+       <label>Page:
+         <select id="page">
+         </select>
+       </label>
+    </div>
+    <div id="pdf_display">
+        <iframe id="displayer" src="../A_Treatise_of_the_Figures_of_Grammar_and_Rhetorike-pages/0.pdf" width=100% height=100%></iframe>
+    </div>
+    <div id="text_entry_2">
+        <div class="sample-toolbar">
+            <a href="javascript:void(0)" onclick="format('bold')"><span class="fa fa-bold fa-fw"></span></a>
+            <a href="javascript:void(0)" onclick="format('italic')"><span class="fa fa-italic fa-fw"></span></a>
+            <a href="javascript:void(0)" onclick="format('Underline')"><span class="fa fa-underline fa-fw"></a>
+            <a href="javascript:void(0)" onclick="format('insertunorderedlist')"><span>&#383;</span></a>
+            <a href="javascript:void(0)" onclick="format('insertunorderedlist')"><span class="fa fa-list fa-fw"></span></a>
+            <a href="javascript:void(0)" onclick="saveFile()">Save to file</a>
+            
+        </div>
+        <div class="editor" id="sampleeditor">
+        </div>
+    </div>
+        
+    <div id="cleared"></div>
+ </div>
+
+
+<script src="diff_approach.js"></script>

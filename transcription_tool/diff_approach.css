@@ -1,0 +1,49 @@
+#wrapper {
+}
+#text_entry_2{
+    float: left;
+    width: 50%;
+    height: 80%;
+    background-color: #7f94f5;
+  }
+#file_finder {
+  float: right;
+  width: 50%;
+  height: 20%;
+  background-color: #CCF;
+}
+#pdf_display {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: #FFA;
+}
+
+#cleared {
+  clear: both;
+}
+
+.editor
+{
+    border:solid 1px #ccc;
+    padding: 20px;
+    min-height:200px;
+}
+
+.sample-toolbar
+{
+    border:solid 1px #ddd;
+    background:#f4f4f4;
+    padding: 5px;
+    border-radius:3px;
+}
+
+.sample-toolbar > span
+{
+    cursor:pointer;
+}
+
+.sample-toolbar > span:hover
+{
+    text-decoration:underline;
+}
